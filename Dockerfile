@@ -10,5 +10,5 @@ COPY . .
 
 WORKDIR /src/
 
-CMD ["python","explore.py"]
+CMD ["python","run.py"]
 
