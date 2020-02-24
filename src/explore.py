@@ -29,7 +29,7 @@ def run_explore():
     # Text output
     with open('../explore-output/info.txt',"w+") as f:
         print("Colums: ",list(df.columns),"\n",file=f)
-        print("First 100 rows: \n",df.head(100),"\n",file=f)
+        print("100 sample rows from dataframe: \n",df.sample(100,random_state=0),"\n",file=f)
         print("Shape of data set:",df.shape,"\n",file=f)
         print("Column datatypes: \n",df.dtypes,"\n",file=f)
         print("Basic statistics: \n",df.describe(),"\n",file=f)
